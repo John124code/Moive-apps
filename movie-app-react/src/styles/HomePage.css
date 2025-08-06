@@ -1,0 +1,56 @@
+/* HomePage.css */
+.home-page {
+    min-height: 100vh;
+    transition: all 0.3s ease;
+}
+
+.home-page.dark-theme {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+}
+
+.home-page.light-theme {
+    background: linear-gradient(135deg, #a8e6cf 0%, #dcedc1 100%);
+    color: #333;
+}
+
+.main-content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 1.2rem;
+    color: inherit;
+}
+
+.movies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.no-movies {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.2rem;
+    color: inherit;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 1rem;
+    }
+    
+    .movies-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+}
