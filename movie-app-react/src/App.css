@@ -9,10 +9,55 @@ body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
+  font-size: 16px;
 }
 
 .App {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive typography */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Touch targets for mobile */
+button, a, input {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+@media (max-width: 768px) {
+  button, a, input {
+    min-height: 48px;
+    min-width: 48px;
+  }
 }
 
 /* Scrollbar styling */
@@ -33,6 +78,13 @@ body {
   background: rgba(255, 255, 255, 0.5);
 }
 
+/* Mobile scrollbar */
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+}
+
 /* Button focus styles */
 button:focus {
   outline: 2px solid rgba(255, 255, 255, 0.5);
@@ -42,4 +94,24 @@ button:focus {
 /* Smooth transitions for all elements */
 * {
   transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Responsive containers */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.5rem;
+  }
 }

@@ -115,4 +115,62 @@
         -webkit-line-clamp: 3;
         line-clamp: 3;
     }
+    
+    .movie-card:hover {
+        transform: translateY(-5px);
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-poster {
+        height: 250px;
+    }
+    
+    .movie-info {
+        padding: 0.75rem;
+    }
+    
+    .movie-title {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .movie-overview {
+        font-size: 0.85rem;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+    }
+    
+    .rating-value {
+        font-size: 0.9rem;
+    }
+    
+    .star {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .movie-poster {
+        height: 200px;
+    }
+    
+    .movie-info {
+        padding: 0.5rem;
+    }
+    
+    .movie-title {
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .movie-overview {
+        font-size: 0.8rem;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+    }
+    
+    .movie-card:hover {
+        transform: translateY(-3px);
+    }
 }

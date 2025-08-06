@@ -13,7 +13,14 @@ const Header = ({
     return (
         <header className="header">
             <nav className="navbar">
-                <h1 className="app-title">🎬 Johnny's MovieApps</h1>
+                <div className="app-brand">
+                    <img 
+                        src={process.env.PUBLIC_URL + '/favicon.svg'} 
+                        alt="Movie App Logo" 
+                        className="app-logo"
+                    />
+                    <h1 className="app-title">Johnny's MovieApps</h1>
+                </div>
                 <div className="nav-controls">
                     <button 
                         className="theme-toggle" 

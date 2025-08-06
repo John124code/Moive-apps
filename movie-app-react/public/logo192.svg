@@ -1,0 +1,50 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="96" cy="96" r="96" fill="url(#gradient)"/>
+  
+  <!-- Film Strip -->
+  <rect x="30" y="56" width="132" height="80" rx="8" fill="#2a2a2a" stroke="#4a4a4a" stroke-width="2"/>
+  
+  <!-- Film Holes -->
+  <circle cx="41" cy="68" r="3" fill="#1a1a1a"/>
+  <circle cx="41" cy="82" r="3" fill="#1a1a1a"/>
+  <circle cx="41" cy="96" r="3" fill="#1a1a1a"/>
+  <circle cx="41" cy="110" r="3" fill="#1a1a1a"/>
+  <circle cx="41" cy="124" r="3" fill="#1a1a1a"/>
+  
+  <circle cx="151" cy="68" r="3" fill="#1a1a1a"/>
+  <circle cx="151" cy="82" r="3" fill="#1a1a1a"/>
+  <circle cx="151" cy="96" r="3" fill="#1a1a1a"/>
+  <circle cx="151" cy="110" r="3" fill="#1a1a1a"/>
+  <circle cx="151" cy="124" r="3" fill="#1a1a1a"/>
+  
+  <!-- Main Screen -->
+  <rect x="52" y="68" width="88" height="56" rx="4" fill="#000"/>
+  
+  <!-- Play Button -->
+  <circle cx="96" cy="96" r="15" fill="rgba(255,255,255,0.9)"/>
+  <path d="M90 86 L105 96 L90 106 Z" fill="#333"/>
+  
+  <!-- Film Frames -->
+  <rect x="54" y="70" width="16" height="12" rx="1" fill="#333" stroke="#555" stroke-width="0.5"/>
+  <rect x="74" y="70" width="16" height="12" rx="1" fill="#444" stroke="#555" stroke-width="0.5"/>
+  <rect x="102" y="70" width="16" height="12" rx="1" fill="#333" stroke="#555" stroke-width="0.5"/>
+  <rect x="122" y="70" width="16" height="12" rx="1" fill="#444" stroke="#555" stroke-width="0.5"/>
+  <rect x="54" y="110" width="16" height="12" rx="1" fill="#444" stroke="#555" stroke-width="0.5"/>
+  <rect x="74" y="110" width="16" height="12" rx="1" fill="#333" stroke="#555" stroke-width="0.5"/>
+  <rect x="102" y="110" width="16" height="12" rx="1" fill="#444" stroke="#555" stroke-width="0.5"/>
+  <rect x="122" y="110" width="16" height="12" rx="1" fill="#333" stroke="#555" stroke-width="0.5"/>
+  
+  <!-- Stars -->
+  <path d="M56 45 L58 50 L63 50 L59 53 L61 58 L56 55 L51 58 L53 53 L49 50 L54 50 Z" fill="#FFD700"/>
+  <path d="M136 45 L138 50 L143 50 L139 53 L141 58 L136 55 L131 58 L133 53 L129 50 L134 50 Z" fill="#FFD700"/>
+  <path d="M96 30 L98 35 L103 35 L99 38 L101 43 L96 40 L91 43 L93 38 L89 35 L94 35 Z" fill="#FFD700"/>
+  
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>

@@ -207,6 +207,7 @@
     
     .movie-meta {
         gap: 1rem;
+        flex-wrap: wrap;
     }
     
     .rating-value {
@@ -221,19 +222,82 @@
         padding: 0.6rem 1.2rem;
         font-size: 0.9rem;
     }
+    
+    .trailer-iframe {
+        height: 250px;
+    }
 }
 
 @media (max-width: 480px) {
+    .movie-details {
+        padding: 0.5rem;
+    }
+    
     .movie-details-title {
         font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
     
     .movie-description h3,
     .movie-trailer h3 {
         font-size: 1.2rem;
+        margin-bottom: 0.75rem;
     }
     
     .movie-description p {
         font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    .movie-info-section {
+        padding: 1rem;
+    }
+    
+    .movie-poster-section {
+        max-width: 250px;
+    }
+    
+    .movie-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+    
+    .back-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+    }
+    
+    .trailer-iframe {
+        height: 200px;
+    }
+}
+
+@media (max-width: 320px) {
+    .movie-details-title {
+        font-size: 1.2rem;
+    }
+    
+    .movie-description h3,
+    .movie-trailer h3 {
+        font-size: 1rem;
+    }
+    
+    .movie-description p {
+        font-size: 0.9rem;
+    }
+    
+    .movie-poster-section {
+        max-width: 200px;
+    }
+    
+    .back-button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .trailer-iframe {
+        height: 150px;
     }
 }

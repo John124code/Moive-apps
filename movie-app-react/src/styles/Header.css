@@ -16,6 +16,23 @@
     gap: 1rem;
 }
 
+.app-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.app-logo {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease;
+}
+
+.app-logo:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
 .app-title {
     color: white;
     font-size: 2.5rem;
@@ -137,6 +154,68 @@
     transform: translateY(-2px);
 }
 
+/* Light theme styles */
+.light-theme .header {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+.light-theme .app-title {
+    color: #333;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.light-theme .theme-toggle {
+    background: rgba(0, 0, 0, 0.1);
+    border: 2px solid #333;
+    color: #333;
+}
+
+.light-theme .theme-toggle:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.light-theme .auth-btn {
+    background: transparent;
+    color: #333;
+    border: 2px solid #333;
+}
+
+.light-theme .auth-btn:hover {
+    background: #333;
+    color: white;
+}
+
+.light-theme .search-input {
+    background: rgba(0, 0, 0, 0.1);
+    color: #333;
+    border: 2px solid #333;
+}
+
+.light-theme .search-input:focus {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+}
+
+.light-theme .search-input::placeholder {
+    color: #666;
+}
+
+.light-theme .search-btn {
+    background: #333;
+    color: white;
+    border: 2px solid #333;
+}
+
+.light-theme .search-btn:hover {
+    background: #667eea;
+    border-color: #667eea;
+    transform: translateY(-2px);
+}
+
 @media (max-width: 768px) {
     .header {
         padding: 1rem;
@@ -144,6 +223,15 @@
     
     .app-title {
         font-size: 2rem;
+    }
+    
+    .app-logo {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .app-brand {
+        gap: 0.75rem;
     }
     
     .navbar {
@@ -167,5 +255,87 @@
     
     .search-btn {
         width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    .app-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .app-logo {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .app-brand {
+        gap: 0.5rem;
+    }
+    
+    .navbar {
+        gap: 0.75rem;
+    }
+    
+    .nav-controls {
+        gap: 0.75rem;
+        flex-wrap: wrap;
+    }
+    
+    .auth-btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .theme-toggle {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .search-input {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+    
+    .search-btn {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .app-title {
+        font-size: 1.2rem;
+    }
+    
+    .app-logo {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .app-brand {
+        gap: 0.4rem;
+    }
+    
+    .auth-btn {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+    
+    .theme-toggle {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    
+    .search-input, .search-btn {
+        font-size: 0.8rem;
+        padding: 0.5rem;
     }
 }
